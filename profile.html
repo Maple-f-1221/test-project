@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maple's Profile</title>
+    <style>
+        :root {
+            --bg-color: #f0f8ff; /* AliceBlue */
+            --container-bg: #ffffff;
+            --primary-text: #333333;
+            --secondary-text: #555555;
+            --accent-color-1: #e6e6fa; /* Lavender */
+            --accent-color-2: #f5f5dc; /* Beige */
+            --shadow-color: rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-text);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: var(--container-bg);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px var(--shadow-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 2px solid var(--accent-color-1);
+            padding-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            color: var(--primary-text);
+            margin: 0;
+        }
+
+        .profile-section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: var(--accent-color-2);
+            border-radius: 10px;
+            border-left: 5px solid var(--accent-color-1);
+        }
+
+        .profile-section h2 {
+            font-size: 1.8em;
+            font-weight: 400;
+            color: var(--secondary-text);
+            border-bottom: 1px solid var(--accent-color-1);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .profile-section p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        .contact-section {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+
+        .contact-section p {
+            font-style: italic;
+            color: var(--secondary-text);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .profile-section h2 {
+                font-size: 1.5em;
+            }
+
+            .profile-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Maple</h1>
+        </header>
+
+        <main>
+            <section id="about" class="profile-section">
+                <h2>自己紹介</h2>
+                <p>定年退職後数年間延長して働いてから退職、自分の時間を満喫しています。</p>
+            </section>
+
+            <section id="career" class="profile-section">
+                <h2>経歴</h2>
+                <p>元薬剤師。二つの病院と二つの薬局で勤務。最終役職は薬剤部長。</p>
+            </section>
+
+            <section id="skills" class="profile-section">
+                <h2>スキル</h2>
+                <p>指導薬剤師、在宅薬剤師、薬学実習生の指導歴10年以上、英検2級。</p>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <p>個別のご相談は、後日フォームを設置予定です。</p>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
